@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {FormationModel} from '../shared/models/formation.model';
 
 @Component({
   selector: 'app-formation',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formation.component.css']
 })
 export class FormationComponent implements OnInit {
-
-  constructor() { }
+@Input() formation: FormationModel;
+  constructor() {
+    this.formation = new FormationModel();
+  }
 
   ngOnInit() {
   }

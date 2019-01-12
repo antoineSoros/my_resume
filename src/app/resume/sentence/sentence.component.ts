@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SentenceModel} from '../shared/models/sentence.model';
 
 @Component({
   selector: 'app-sentence',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sentence.component.css']
 })
 export class SentenceComponent implements OnInit {
-
-  constructor() { }
+@Input() sentence: SentenceModel;
+  constructor() {
+    this.sentence = new SentenceModel();
+    this.sentence.sentence = 'Après avoir goûté à la programmation dans le spectacle,\n' +
+      'je suis en reconversion dans le développement informatique.';
+  }
 
   ngOnInit() {
   }

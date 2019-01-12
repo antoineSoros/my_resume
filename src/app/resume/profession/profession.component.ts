@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ProfessionModel} from '../shared/models/profession.model';
 
 @Component({
   selector: 'app-profession',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profession.component.css']
 })
 export class ProfessionComponent implements OnInit {
-
-  constructor() { }
+@Input() profession: ProfessionModel;
+  constructor() {
+    this.profession = new ProfessionModel();
+    this.profession.profession = 'Développeur Junior';
+  }
 
   ngOnInit() {
   }

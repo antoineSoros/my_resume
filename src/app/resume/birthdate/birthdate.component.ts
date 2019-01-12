@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {BirthdateModel} from '../shared/models/birthdate.model';
 
 @Component({
   selector: 'app-birthdate',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./birthdate.component.css']
 })
 export class BirthdateComponent implements OnInit {
-
-  constructor() { }
+@Input() birthDate: BirthdateModel;
+  constructor() {
+    this.birthDate = new BirthdateModel();
+    this.birthDate.day = '26';
+    this.birthDate.month = '05';
+    this.birthDate.year = '1983';
+  }
 
   ngOnInit() {
   }

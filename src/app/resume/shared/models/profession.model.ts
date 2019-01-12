@@ -1,3 +1,3 @@
 export class ProfessionModel {
-  porfession: string;
+  profession: string;
 }

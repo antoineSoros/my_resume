@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {CoordonatesModel} from '../shared/models/coordonates.model';
 
 @Component({
   selector: 'app-coordonates',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./coordonates.component.css']
 })
 export class CoordonatesComponent implements OnInit {
-
-  constructor() { }
+@Input() coordonates: CoordonatesModel;
+  constructor() {
+    this.coordonates = new CoordonatesModel();
+    this.coordonates.address = '19 rue louis Braille \n 69100 Villeurbanne';
+    this.coordonates.phoneNumber = '06.31.44.28.91';
+    this.coordonates.mail = 'antoine.soros@orange.fr';
+  }
 
   ngOnInit() {
   }
