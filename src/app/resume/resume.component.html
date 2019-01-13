@@ -1,18 +1,30 @@
-<mat-sidenav-container fullscreen  >
-
-
-  <mat-sidenav mode="side" opened >
+<mat-sidenav-container fullscreen >
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" >
     <app-coordonates></app-coordonates>
-    <app-birthdate></app-birthdate>
+<app-social-skills></app-social-skills>
+
 
   </mat-sidenav>
+
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <mat-toolbar-row>
-        <span> <app-name></app-name></span><span><app-sentence></app-sentence></span><span><app-picture></app-picture></span>
+    <header  fxLayout="row" fxLayoutAlign=" space-between center">
+      <span><button mat-icon-button (click)="sidenav.toggle()"><app-name></app-name></button></span>
+      <span> <app-sentence></app-sentence></span>
+       <span><app-picture></app-picture></span>
+    </header>
+    <mat-toolbar  fxLayout="row"   color="primary"  >
+
+      <mat-toolbar-row fxLayoutAlign=" space-around center" >
+
+
       </mat-toolbar-row>
+      <mat-toolbar-row fxLayoutAlign=" space-around center" > <span></span></mat-toolbar-row>
+
+
+
     </mat-toolbar>
-    <app-profession></app-profession>
+
+    <app-profession ></app-profession>
 
 
 
