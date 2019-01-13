@@ -12,19 +12,21 @@
       <span> <app-sentence></app-sentence></span>
        <span><app-picture></app-picture></span>
     </header>
-    <mat-toolbar  fxLayout="row"   color="secondary" >
+    <div fxLayout="column"  >
+    <mat-toolbar  color="secondary" fxlayoutalign="center center"  >
 
-      <mat-toolbar-row fxLayoutAlign=" space-around center" >
+      <mat-toolbar-row  >
 
-
+        <app-profession ></app-profession>
       </mat-toolbar-row>
-      <mat-toolbar-row fxLayoutAlign=" space-around center" > <span></span></mat-toolbar-row>
+
 
 
 
     </mat-toolbar>
+    </div>
 
-    <app-profession ></app-profession>
+
     <app-xps></app-xps>
 
 
