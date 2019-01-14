@@ -5,9 +5,9 @@ export const EXPRERIENCES: XpModel[] = [
     id: 1,
     date: '2007-2018',
     title: 'Régisseur Lumière - employeurs multiples',
-    description: 'Mise en lumière de spectacle : théâtre, concert, danse, conférence, et tous types\n' +
-      'd\'événements.\n' +
-      'Création sur logiciel, programmation, montage/démontage\n' +
+    description: 'Mise en lumière de spectacle : théâtre, concert, danse, conférence, et tous types' +
+      'd\'événements.' +
+      'Création sur logiciel, programmation, montage/démontage' +
       'Management d’équipe, préparation (devis/matériel).'
   },
   {

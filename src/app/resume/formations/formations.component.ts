@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormationModel} from '../shared/models/formation.model';
+import {FORMATIONS} from '../shared/mocks/mock-formations';
 
 @Component({
   selector: 'app-formations',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formations.component.css']
 })
 export class FormationsComponent implements OnInit {
-
+  private formations: FormationModel[];
   constructor() { }
 
   ngOnInit() {
+    this.formations = FORMATIONS;
   }
 
 }

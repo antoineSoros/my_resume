@@ -1,6 +1,7 @@
 export class FormationModel {
   id: number;
+  date: string;
   title: string;
-  description: string;
+  lieu: string;
 
 }
