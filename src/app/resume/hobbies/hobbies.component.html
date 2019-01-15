@@ -1,3 +1,16 @@
-<p>
-  hobbies works!
-</p>
+<h2>HOBBIES</h2>
+
+<mat-tab-group animationDuration="2000ms">
+  <div *ngFor="let hobby of hobbies">
+
+  <mat-tab >
+    <ng-template mat-tab-label><img src="{{hobby.icon}}"></ng-template>
+    <h2>{{hobby.name}}</h2>
+    <p>{{hobby.description}}</p>
+  </mat-tab>
+  </div>
+</mat-tab-group>
+<div>
+
+
+</div>

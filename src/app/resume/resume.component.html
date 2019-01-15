@@ -1,42 +1,44 @@
-<mat-sidenav-container fullscreen >
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened" >
-    <app-coordonates></app-coordonates>
+
+
+
+  <header fxLayout="row" fxLayoutAlign=" space-between center">
+    <span><button mat-icon-button ><app-name></app-name></button></span>
+    <span> <app-sentence></app-sentence></span>
+    <span><app-picture></app-picture></span>
+  </header>
+
+  <mat-toolbar  color="secondary" fxlayoutalign="end center"  >
+
+    <mat-toolbar-row  >
+
+      <app-profession ></app-profession>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-drawer-container>
+    <mat-drawer mode="side" opened fxLayout="column" fxLayoutAlign="space-around center" class="mat-elevation-z24">
+
+<div style="margin-top: 20%;">
+    <app-coordonates ></app-coordonates>
+</div>
+      <div style="margin-top: 20%;">
 <app-social-skills></app-social-skills>
 
+      </div>
 
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <header  fxLayout="row" fxLayoutAlign=" space-between center">
-      <span><button mat-icon-button (click)="sidenav.toggle()"><app-name></app-name></button></span>
-      <span> <app-sentence></app-sentence></span>
-       <span><app-picture></app-picture></span>
-    </header>
-    <div fxLayout="column"  >
-    <mat-toolbar  color="secondary" fxlayoutalign="center center"  >
-
-      <mat-toolbar-row  >
-
-        <app-profession ></app-profession>
-      </mat-toolbar-row>
-
-
-
-
-    </mat-toolbar>
-    </div>
+    </mat-drawer>
+    <mat-drawer-content >
 
 
     <app-xps></app-xps>
     <app-formations></app-formations>
     <app-skills></app-skills>
+      <app-hobbies></app-hobbies>
+    </mat-drawer-content>
 
 
+  </mat-drawer-container>
 
 
-
-  </mat-sidenav-content>
-</mat-sidenav-container>
 
 
 

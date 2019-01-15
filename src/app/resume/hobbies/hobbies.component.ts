@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HobbyModel} from '../shared/models/hobby.model';
+import {HOBBIES} from '../shared/mocks/mock-hobbies';
 
 @Component({
   selector: 'app-hobbies',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hobbies.component.css']
 })
 export class HobbiesComponent implements OnInit {
-
-  constructor() { }
+  private hobbies: HobbyModel[];
+  constructor() {
+  this.hobbies = HOBBIES;
+  }
 
   ngOnInit() {
   }
