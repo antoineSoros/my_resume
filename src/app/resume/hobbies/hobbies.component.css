@@ -1,7 +1,11 @@
 h2{
-  margin: 20%;
+
 }
 
 mat-tab{
+  background-color: #aeaeae;
+  height: 50px;
+  width: 100px;
+  margin: auto;
 
 }

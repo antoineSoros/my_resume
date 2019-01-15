@@ -1,5 +1,5 @@
 header{
-  background-color: #212121;
+  background-color: #424242;
  display: flex;
   flex-direction: row;
 
@@ -7,8 +7,13 @@ header{
 
 
 mat-toolbar{
+
   height: 200px;
 }
 mat-drawer{
+  background-color: #212121;
   width: 20%;
+}
+mat-drawer-content{
+  background-color:#707070;
 }
