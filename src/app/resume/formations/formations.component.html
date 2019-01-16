@@ -1,9 +1,10 @@
 <h1>FORMATIONS</h1>
 
-<mat-list>
-  <mat-list-item *ngFor="let formation of formations">
-    <h3 matLine> {{formation.date}} </h3>
-    <h4 matLine>{{formation.title}}</h4>
-    <p matLine> {{formation.lieu}} </p>
-  </mat-list-item>
-</mat-list>
+
+  <div *ngFor="let formation of formations">
+    <div><h2 > {{formation.date}} </h2></div>
+    <div><h3 >{{formation.title}}</h3></div>
+    <div><p > {{formation.lieu}} </p></div>
+    <mat-divider></mat-divider>
+  </div>
+

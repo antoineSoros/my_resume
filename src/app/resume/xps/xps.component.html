@@ -1,8 +1,9 @@
 <h1>EXPÉRIENCES</h1>
-<mat-list>
-  <mat-list-item *ngFor="let xp of xps">
-    <h2 matLine> {{xp.date}} </h2>
-    <h3 matLine> {{xp.title}} </h3>
-    <p matLine > {{xp.description}} </p>
-  </mat-list-item>
-</mat-list>
+
+  <div *ngFor="let xp of xps">
+    <div><h2 > {{xp.date}} </h2></div>
+    <div><h3 > {{xp.title}} </h3></div>
+    <div><p  > {{xp.description}} </p></div>
+    <mat-divider></mat-divider>
+  </div>
+

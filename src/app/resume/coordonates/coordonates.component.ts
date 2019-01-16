@@ -10,7 +10,8 @@ export class CoordonatesComponent implements OnInit {
 @Input() coordonates: CoordonatesModel;
   constructor() {
     this.coordonates = new CoordonatesModel();
-    this.coordonates.address = '19 rue louis Braille \n 69100 Villeurbanne';
+    this.coordonates.address = '19 rue louis Braille ';
+    this.coordonates.city = '69100 Villeurbanne';
     this.coordonates.phoneNumber = '06.31.44.28.91';
     this.coordonates.mail = 'antoine.soros@orange.fr';
   }
