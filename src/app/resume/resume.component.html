@@ -1,12 +1,12 @@
 
 
-
+<mat-card >
   <header fxLayout="row" fxLayoutAlign=" center center">
     <span><app-name></app-name></span>
     <span> <app-sentence></app-sentence></span>
     <span><app-picture></app-picture></span>
   </header>
-
+</mat-card>
   <mat-toolbar  color="secondary" fxlayoutalign="end center"  >
 
     <mat-toolbar-row  >
@@ -24,21 +24,25 @@
         <app-birthdate></app-birthdate>
       </div>
       <div style="margin-top: 20%;">
-<app-social-skills></app-social-skills>
+<app-social-skills class="mat-elevation-z24" style="width: 80%; "></app-social-skills>
 
+      </div>
+      <div style="margin-top: 20%;">
+        <app-links></app-links>
       </div>
 
     </mat-drawer>
     <mat-drawer-content >
 
-<div fxLayout="column"  fxLayoutGap="32px" fxLayoutAlign="center center" >
-    <app-xps class="mat-elevation-z24" style="width: 80%;"></app-xps>
-    <app-formations class="mat-elevation-z24" style="width: 80%;"></app-formations>
+<div fxLayout="column"  fxLayoutGap="32px" fxLayoutAlign="center center" style="margin-top: 32px;">
+    <app-xps class="mat-elevation-z24" style="width: 80%; "></app-xps>
+    <app-formations class="mat-elevation-z24" style="width: 80%; "></app-formations>
 
      <app-skills class="mat-elevation-z24" style="width: 80%;"></app-skills>
 
 
-      <app-hobbies class="mat-elevation-z24" style="width: 80%;"></app-hobbies>
+      <app-hobbies class="mat-elevation-z24" style="width: 80%;margin-bottom: 32px;"></app-hobbies>
+  <footer></footer>
 
 </div>
     </mat-drawer-content>

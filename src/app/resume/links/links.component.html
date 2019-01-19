@@ -1,0 +1,10 @@
+
+<h3>Liens</h3>
+<ul>
+<div *ngFor="let link of links ">
+  <li >
+   <img src='{{link.logo}}'>
+    <a id="lien" href="{{link.url}}">{{link.name}}</a>
+  </li>
+</div>
+</ul>
