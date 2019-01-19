@@ -1,17 +1,29 @@
+<mat-card>
+  <mat-card-title>
 <h1>HOBBIES</h1>
+  </mat-card-title>
+<mat-card-content>
+<div id="all" fxLayout="row " fxLayoutAlign="space-evenly center ">
+  <div *ngFor="let hobby of hobbies"  >
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img src="{{hobby.icon}}">
+      </mat-panel-title>
+      <mat-panel-description>
 
-<mat-tab-group animationDuration="2000ms">
-  <div *ngFor="let hobby of hobbies">
+      </mat-panel-description>
+    </mat-expansion-panel-header>
 
-  <mat-tab  >
-    <ng-template mat-tab-label><img src="{{hobby.icon}}"></ng-template>
-   <div id="content"> <h2>{{hobby.name}}</h2>
-    <p>{{hobby.description}}</p>
-   </div>
-  </mat-tab>
+    <div id="content"> <h2>{{hobby.name}}</h2>
+      <p>{{hobby.description}}</p>
+    </div>
+  </mat-expansion-panel>
   </div>
-</mat-tab-group>
-<div>
-
-
 </div>
+</mat-card-content>
+</mat-card>
+
+
+
+

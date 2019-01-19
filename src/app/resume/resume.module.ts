@@ -18,6 +18,8 @@ import { SocialSkillComponent } from './social-skill/social-skill.component';
 import {SharedModule} from '../shared/shared.module';
 import { XpComponent } from './xp/xp.component';
 import { XpsComponent } from './xps/xps.component';
+import { LinkComponent } from './link/link.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [ResumeComponent,
@@ -36,7 +38,9 @@ import { XpsComponent } from './xps/xps.component';
     HobbiesComponent,
     SocialSkillComponent,
     XpComponent,
-    XpsComponent
+    XpsComponent,
+    LinkComponent,
+    LinksComponent
   ],
   imports: [
     CommonModule,

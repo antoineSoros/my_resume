@@ -1,10 +1,14 @@
+
+<mat-card>
+  <mat-card-title>
 <h1>FORMATIONS</h1>
-
-
+  </mat-card-title>
+<mat-card-content>
   <div *ngFor="let formation of formations">
     <div><h2 > {{formation.date}} </h2></div>
     <div><h3 >{{formation.title}}</h3></div>
     <div><p > {{formation.lieu}} </p></div>
     <mat-divider></mat-divider>
   </div>
-
+</mat-card-content>
+</mat-card>

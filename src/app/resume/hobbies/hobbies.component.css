@@ -14,9 +14,10 @@ h1{
 #content{
 
   height: 100px;
+  width: 300px;
 
 }
 img{
-  padding-top: 15%;
+  padding-top: 12%;
   height: 90%;
 }

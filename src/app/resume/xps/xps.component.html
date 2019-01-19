@@ -1,9 +1,13 @@
+<mat-card>
+  <mat-card-title>
 <h1>EXPÉRIENCES</h1>
-
+  </mat-card-title>
+<mat-card-content>
   <div *ngFor="let xp of xps">
     <div><h2 > {{xp.date}} </h2></div>
     <div><h3 > {{xp.title}} </h3></div>
     <div><p  > {{xp.description}} </p></div>
     <mat-divider></mat-divider>
   </div>
-
+</mat-card-content>
+</mat-card>

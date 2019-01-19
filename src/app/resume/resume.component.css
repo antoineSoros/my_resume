@@ -7,13 +7,14 @@ header{
 
 
 mat-toolbar{
-
+  border: #212121 solid 5px;
+  box-shadow:  5px 5px 5px 1px #212121;
   height: 200px;
 }
 mat-drawer{
   background-color: #212121;
-  width: 20%;
-}
+  width: 20%;}
+
 mat-drawer-content{
   background-color:#707070;
 }

@@ -3,5 +3,6 @@ export class  SkillModel {
   logo: string;
   name: string;
   level: number;
+  description: string;
   column: number;
 }

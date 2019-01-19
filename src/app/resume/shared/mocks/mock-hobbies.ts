@@ -10,13 +10,13 @@ export const HOBBIES: HobbyModel[] = [
   {
     id: 2,
     name: 'rugby',
-    description: '',
+    description: 'Rien de mieux que de regarder un bon crunch dans un pub avec des amis.',
     icon: '/assets/logo/rugby.png'
   },
   {
     id: 3,
     name: 'la raclette',
-    description: '',
+    description: 'tout est dit....',
     icon: '/assets/logo/food.png'
   }
 ];
