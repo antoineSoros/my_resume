@@ -10,7 +10,7 @@ export class PictureComponent implements OnInit {
 @Input() picture: PictureModel;
   constructor() {
     this.picture = new PictureModel();
-    this.picture.uri = '/assets/id_pic.jpg';
+    this.picture.uri = 'assets/id_pic.jpg';
   }
 
   ngOnInit() {

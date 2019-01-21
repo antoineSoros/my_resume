@@ -16,13 +16,13 @@ export const LINKS: LinkModel[] = [
   {
     id: 3,
     name: 'Github 1',
-    logo: '/assets/logo/github.png',
+    logo: 'assets/logo/github.png',
     url: 'https://github.com/antoineSoros'
   },
   {
     id: 4,
     name: 'Github 2',
-    logo: '/assets/logo/github.png',
+    logo: 'assets/logo/github.png',
     url: 'https://github.com/Backalight'
 
   }
