@@ -4,7 +4,7 @@ export const HOBBIES: HobbyModel[] = [
   {
     id: 1,
     name: 'musique',
-    description: '',
+    description: 'J\'aime tous les styles avec une préférence pour le rock des années 90',
     icon: '/assets/logo/rock.png'
   },
   {
@@ -18,5 +18,11 @@ export const HOBBIES: HobbyModel[] = [
     name: 'la raclette',
     description: 'tout est dit....',
     icon: '/assets/logo/food.png'
+  },
+  {
+    id: 4,
+    name: 'jeux vidéo vr',
+    description: 'Une découverte toute récente!!! ',
+    icon: 'assets/logo/vr.png'
   }
 ];

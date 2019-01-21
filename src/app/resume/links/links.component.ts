@@ -8,7 +8,7 @@ import {LINKS} from '../shared/mocks/mock-links';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
-  private links: LinkModel[];
+ public links: LinkModel[];
   constructor() { }
 
   ngOnInit() {

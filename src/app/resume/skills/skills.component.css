@@ -5,7 +5,7 @@
 }
 
 h1{
-  margin-left: 100px;
+  margin-left: 32%;
   font-size: 3em;
 
 
@@ -21,11 +21,12 @@ img{
 mat-card{
 
   background-color: #707070;
- margin-left: 15%;
+ margin-left: 25%;
   margin-right: 15%;
   margin-top:5%;
   height:70px;
   width: 300px;
+  margin-bottom: 5%;
 }
 #nom{
 height: 20px;

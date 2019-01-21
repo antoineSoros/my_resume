@@ -7,7 +7,7 @@ import {SocialSkillModel} from '../shared/models/socialSkill.model';
   styleUrls: ['./social-skills.component.css']
 })
 export class SocialSkillsComponent implements OnInit {
-private socialSkills: SocialSkillModel[];
+public socialSkills: SocialSkillModel[];
   constructor() { }
 
   ngOnInit() {

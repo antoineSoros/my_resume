@@ -8,7 +8,7 @@ import {SKILLS} from '../shared/mocks/mock-skills';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-private skills: SkillModel[];
+public skills: SkillModel[];
   constructor() { }
 
   ngOnInit() {

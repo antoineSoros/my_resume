@@ -8,7 +8,7 @@ import {EXPRERIENCES} from '../shared/mocks/mock-xps';
   styleUrls: ['./xps.component.css']
 })
 export class XpsComponent implements OnInit {
-private xps: XpModel[];
+public xps: XpModel[];
   constructor() { }
 
   ngOnInit() {

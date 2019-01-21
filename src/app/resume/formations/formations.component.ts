@@ -8,7 +8,7 @@ import {FORMATIONS} from '../shared/mocks/mock-formations';
   styleUrls: ['./formations.component.css']
 })
 export class FormationsComponent implements OnInit {
-  private formations: FormationModel[];
+  public formations: FormationModel[];
   constructor() { }
 
   ngOnInit() {

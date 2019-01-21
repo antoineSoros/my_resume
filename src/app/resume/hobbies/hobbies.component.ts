@@ -8,7 +8,7 @@ import {HOBBIES} from '../shared/mocks/mock-hobbies';
   styleUrls: ['./hobbies.component.css']
 })
 export class HobbiesComponent implements OnInit {
-  private hobbies: HobbyModel[];
+public hobbies: HobbyModel[];
   constructor() {
   this.hobbies = HOBBIES;
   }
