@@ -10,8 +10,7 @@ export class SentenceComponent implements OnInit {
 @Input() sentence: SentenceModel;
   constructor() {
     this.sentence = new SentenceModel();
-    this.sentence.sentence = 'Après avoir goûté à la programmation dans le spectacle,\n' +
-      'je suis en reconversion dans le développement informatique.';
+    this.sentence.sentence = 'Après une reconversion réussie en tant que développeur Fullstack, je recherche une nouvelle expérience professionnelle';
   }
 
   ngOnInit() {
