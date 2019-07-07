@@ -44,7 +44,7 @@ export const SKILLS: SkillModel[] = [
   {
     id: 6,
     name: 'PHP 7',
-    level: 65,
+    level: 75,
     logo: 'assets/logo/php7.png',
     column: 2,
     description: '',
@@ -76,7 +76,7 @@ export const SKILLS: SkillModel[] = [
   {
     id: 10,
     name: 'SYMFONY',
-    level: 60,
+    level: 75,
     logo: 'assets/logo/symfony.png',
     column: 2,
     description: '',
@@ -84,7 +84,7 @@ export const SKILLS: SkillModel[] = [
   {
     id: 11,
     name: 'NODE JS',
-    level: 60,
+    level: 50,
     logo: 'assets/logo/nodjs.png',
     column: 2,
     description: '',
