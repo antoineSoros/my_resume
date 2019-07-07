@@ -20,6 +20,7 @@ import { XpComponent } from './xp/xp.component';
 import { XpsComponent } from './xps/xps.component';
 import { LinkComponent } from './link/link.component';
 import { LinksComponent } from './links/links.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [ResumeComponent,
@@ -40,7 +41,8 @@ import { LinksComponent } from './links/links.component';
     XpComponent,
     XpsComponent,
     LinkComponent,
-    LinksComponent
+    LinksComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
