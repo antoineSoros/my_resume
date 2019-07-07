@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>
+    <h1>Projets Personnels</h1>
+  </mat-card-title>
+  <mat-card-content>
+    <div id="all" fxLayout="column " fxlayoutgap="32px" fxLayoutAlign="space-evenly  ">
+
+
+        <div *ngFor="let project of projects"  >
+
+
+
+
+            <h2>{{project.name}}</h2>
+            <p>{{project.description}}</p>
+
+
+        </div>
+
+
+
+    </div>
+
+  </mat-card-content>
+</mat-card>
